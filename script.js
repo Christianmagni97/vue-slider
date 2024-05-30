@@ -27,6 +27,7 @@ createApp ({
                 }
             ],
         }
+      }  
     },
     methods: {
         nextSlide() {
