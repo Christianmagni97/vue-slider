@@ -14,21 +14,23 @@
     <div id="app">
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
-                <div v-for="(slide, index) in slides" :key="index" class="item" v-show="index === activeArticle">
+                <div v-for="(slide, index) in slides" :key="index" class="item" v-show="index === currentSlide">
                     <img :src="slide.image" :alt="slide.title" />
-                <div class="item">
-                    <img src="img/01.webp" alt="Spiderman"/>
-                    <div class="text">
-                        <h3>{{slide.title}}</h3>
-                        <p>
-                            <h3>{{slide.text}}</h3>
-                        </p>
+                    <div class="item">
+                        <img src="img/01.webp" alt="Spiderman"/>
+                        {{slide.image}}
+                        <div class="text">
+                            <h3>{{slide.title}}</h3>
+                            <p>
+                               <h3>{{slide.text}}</h3>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
+
     <script src="script.js"></script>
 </body>
 

@@ -2,6 +2,8 @@ const { createApp} = Vue
 createApp ({
     data (){
         return{
+            currentSlide: 0,  
+        
             slides: [
                 {
                     image: 'img/01.webp',
@@ -26,8 +28,7 @@ createApp ({
                 }
             ],
         }
-      }  
-    
+    }, 
     methods: {
         nextSlide() {
           if (this.currentSlide + 1 < this.slides.length) {
