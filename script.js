@@ -1,4 +1,3 @@
-
 const { createApp} = Vue
 createApp ({
     data (){
@@ -28,7 +27,7 @@ createApp ({
             ],
         }
       }  
-    },
+    
     methods: {
         nextSlide() {
           if (this.currentSlide + 1 < this.slides.length) {
@@ -44,5 +43,6 @@ createApp ({
             this.currentSlide = this.slides.length - 1;
           }
         },
+  }    
 }).mount('#app')    
     
